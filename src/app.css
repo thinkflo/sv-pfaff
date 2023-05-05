@@ -19,11 +19,16 @@
 h1 {
   @apply text-4xl
 }
-
-section.content:first-child h2 {
-  @apply text-5xl text-gray-900
+@media only screen and (max-width: 768px) {
+  section.content:first-child h2 {
+    @apply text-5xl text-gray-900
+  }
 }
-
+@media only screen and (min-width: 769px) {
+  section.content:first-child h2 {
+    @apply text-7xl text-gray-900
+  }
+}
 section.content h2 {
   @apply text-3xl py-8
 }
