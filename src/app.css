@@ -21,7 +21,7 @@ h1 {
 }
 
 section.content:first-child h2 {
-  @apply text-7xl text-gray-900
+  @apply text-5xl text-gray-900
 }
 
 section.content h2 {
