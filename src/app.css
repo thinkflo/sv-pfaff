@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'AvenirLTStd';
+	src: local('☺'), url('/fonts/AvenirLTStd-Book.woff') format('woff'), url('/fonts/AvenirLTStd-Book.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirLTStd';
+	src: local('☺'), url('/fonts/AvenirLTStd-Heavy.woff') format('woff'), url('/fonts/AvenirLTStd-Heavy.otf') format('otf');
+	font-weight: 700;
+	font-style: normal;
+}
+
+h1 {
+  @apply text-4xl
+}
+
+section.content:first-child h2 {
+  @apply text-7xl text-gray-900
+}
+
+section.content h2 {
+  @apply text-3xl py-8
+}
+
+section.content:not(:first-child,.bg-gray-100) p {
+  @apply text-xl leading-loose py-12 text-gray-400
+}
+
+section.content ul li {
+  @apply text-2xl font-bold leading-loose 
+}
+
+section.content ul {
+  @apply pb-24
+}
+
+h3 {
+  @apply text-xl py-12
+}
+
+main > p > img {
+  @apply mx-auto py-12
+}
